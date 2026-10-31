@@ -1,20 +1,32 @@
 [
   {
     "identificador": 1,
-    "nombre": "Registro de ejemplo A",
-    "categoria": "General",
-    "activo": true
+    "nombre": "Computadora no enciende",
+    "categoria": "Hardware",
+    "activo": true,
+    "descripcion": "La computadora del laboratorio no enciende",
+    "cantidadEquipos": 1,
+    "prioridad": "Alta",
+    "solucionAplicada": ""
   },
   {
     "identificador": 2,
-    "nombre": "Registro de ejemplo B",
-    "categoria": "Materiales",
-    "activo": false
+    "nombre": "Impresora no imprime",
+    "categoria": "Hardware",
+    "activo": true,
+    "descripcion": "La impresora de la sala docente no imprime.",
+    "cantidadEquipos": 1,
+    "prioridad": "Media",
+    "solucionAplicada": ""
   },
   {
-    "identificador": 3,
-    "nombre": "Registro de ejemplo C",
-    "categoria": "Servicios",
-    "activo": true
+    "identificador": 4,
+    "nombre": "Problema de conexión",
+    "categoria": "Red",
+    "activo": false,
+    "descripcion": "La computadora no tiene conexión a Internet",
+    "cantidadEquipos": 1,
+    "prioridad": "Media",
+    "solucionAplicada": "Se revisó la  conexión de red y se estableció el acceso  internet"
   }
 ]
