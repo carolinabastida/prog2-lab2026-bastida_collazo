@@ -112,3 +112,76 @@ Para la entrega final del 7 de noviembre continuaremos revisando el programa, re
 ## Recursos utilizados
 
 Partimos del proyecto Java proporcionado por el profesor Domingo Pérez. Utilizamos Java Swing, Maven y Gson para trabajar con archivos JSON.
+
+
+## Destinatarios y utilidad del sistema
+
+El sistema está pensado para registrar y organizar solicitudes de soporte técnico en un centro educativo.
+
+Puede ser utilizado por las personas encargadas de atender problemas informáticos relacionados con computadoras, impresoras y conexiones de red.
+
+Su utilidad consiste en reunir la información de cada solicitud en un mismo lugar, consultar los problemas registrados, identificar su prioridad y dejar constancia de la solución aplicada.
+
+## Adaptación del modelo y reglas del sistema
+
+Partimos del gestor de registros proporcionado por el profesor y lo adaptamos a la gestión de solicitudes de soporte técnico.
+
+Además del identificador, nombre, categoría y estado, incorporamos la descripción del problema, la cantidad de equipos afectados, la prioridad y la solución aplicada.
+
+Definimos las categorías Hardware, Software y Red para clasificar las solicitudes.
+
+También incorporamos validaciones para controlar los datos ingresados. El identificador debe ser positivo y no puede repetirse, el nombre del problema es obligatorio y la cantidad de equipos debe ser mayor que cero.
+
+Como regla propia de nuestro proyecto, una solicitud no puede cerrarse sin indicar la solución aplicada.
+
+## Recorrido de una operación por el programa
+
+Para comprender cómo trabajan las distintas partes del sistema, tomamos como ejemplo el registro de una solicitud.
+
+El usuario completa el formulario de la ventana principal y presiona Registrar.
+
+El controlador recibe esa acción, recoge los datos ingresados y utiliza la fachada para solicitar el registro.
+
+El modelo representa la solicitud y comprueba que sus datos cumplan con las validaciones establecidas.
+
+Si los datos son correctos, la fachada incorpora la solicitud y coordina su guardado mediante la clase de persistencia.
+
+Finalmente, la ventana actualiza la tabla para mostrar la nueva solicitud.
+
+Esta organización permite separar la presentación de la información, las operaciones del programa y el almacenamiento de los datos.
+
+## Comprobaciones complementarias del funcionamiento
+
+Además de las pruebas de validación documentadas anteriormente, realizamos las siguientes comprobaciones durante el desarrollo del sistema.
+
+| Acción realizada | Resultado esperado | Resultado obtenido |
+|---|---|---|
+| Registrar una solicitud válida | Incorporar el registro a la tabla | La solicitud apareció en el listado. |
+| Modificar la prioridad de una solicitud | Guardar el cambio sin alterar su identificador | La prioridad se actualizó y se conservó el identificador. |
+| Cancelar una eliminación | Conservar el registro | La solicitud permaneció en la tabla. |
+| Confirmar la eliminación de un registro de prueba | Eliminar solamente el registro seleccionado | La solicitud de prueba desapareció del listado. |
+| Buscar una solicitud | Mostrar los registros que coinciden con la búsqueda | El sistema mostró los resultados correspondientes. |
+| Cerrar y volver a abrir el programa | Recuperar los datos guardados | Las solicitudes y sus modificaciones se mantuvieron. |
+
+## Requisitos de ejecución y limitaciones conocidas
+
+El programa se desarrolló y probó en Windows utilizando Java 25.
+
+Para compilarlo y ejecutarlo se utiliza Maven, mediante el archivo `mvnw.cmd` incluido en el proyecto.
+
+La interfaz gráfica está desarrollada con Java Swing y el almacenamiento de datos utiliza archivos JSON mediante la biblioteca Gson.
+
+El sistema funciona como una aplicación de escritorio. La información se guarda localmente en `datos/registros.json` y no se encuentra sincronizada entre diferentes computadoras.
+
+No requiere una base de datos externa ni conexión a Internet para registrar y consultar solicitudes.
+
+
+## Aportes durante la preparación de la entrega final
+
+María realizó comprobaciones relacionadas con los identificadores repetidos, el cierre de solicitudes, la eliminación de registros y el manejo de archivos JSON ausentes o inválidos. Documentó esas pruebas y publicó su aporte en GitHub.
+
+Carolina comprobó las validaciones de identificador igual a cero y nombre del problema vacío. En ambos casos verificó los mensajes de error y que no se agregaran registros incorrectos. También documentó los resultados y publicó su aporte en GitHub.
+
+Ambas participamos en el desarrollo del proyecto y en la revisión de su funcionamiento.
+
+
