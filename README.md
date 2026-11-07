@@ -75,6 +75,20 @@ Para comprobar el guardado, registramos varias solicitudes, cerramos el programa
 
 Antes de estas pruebas, guardamos una copia de seguridad del archivo JSON original. Al finalizar, restauramos su nombre y retiramos los archivos temporales del proyecto.
 
+
+### Pruebas de validación realizadas por Carolina
+
+Para continuar con la revisión del sistema, realicé pruebas sobre algunas de las validaciones que incorporamos durante el desarrollo del proyecto.
+
+Primero comprobé qué sucede cuando se intenta registrar una solicitud con un identificador igual a cero. El programa mostró el mensaje "El identificador debe ser mayor que cero" y no permitió agregar el registro.
+
+Después probé registrar una solicitud dejando vacío el nombre del problema. En este caso, apareció el mensaje "Debe escribir el nombre del problema" y la solicitud tampoco se agregó.
+
+En ambas pruebas, el programa respondió de acuerdo con lo esperado. Los registros originales, identificados con los números 1, 2 y 4, permanecieron sin modificaciones.
+
+Estas comprobaciones permitieron verificar que el sistema controla los datos ingresados y evita guardar solicitudes que no cumplen con las condiciones establecidas.
+
+
 ## Cómo ejecutar el programa
 
 Desde la carpeta del proyecto, ejecutar en la terminal:
