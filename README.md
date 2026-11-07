@@ -62,6 +62,19 @@ Comprobamos que se pueden registrar, modificar, buscar y eliminar solicitudes. T
 
 Para comprobar el guardado, registramos varias solicitudes, cerramos el programa y volvimos a abrirlo. Los datos se mantuvieron, incluyendo los cambios realizados.
 
+### Pruebas de validación y persistencia realizadas por María
+
+| Acción realizada | Resultado esperado | Resultado obtenido |
+|---|---|---|
+| Registrar una solicitud con un identificador repetido | Mostrar un error y evitar duplicados | El programa mostró el mensaje de identificador repetido. |
+| Cerrar una solicitud sin indicar la solución aplicada | Impedir el registro e informar el motivo | Apareció el mensaje de error y la solicitud no se agregó. |
+| Eliminar una solicitud de prueba | Solicitar confirmación y eliminar el registro | Se confirmó la eliminación y el registro desapareció de la tabla. |
+| Iniciar sin el archivo JSON | Abrir la aplicación con una tabla vacía | El programa abrió normalmente y mostró la tabla vacía. |
+| Iniciar con un JSON inválido | Mostrar un error sin cerrar la aplicación | El programa informó que no podía cargar los registros y permaneció abierto. |
+| Comprobar que el JSON inválido no se sobrescriba | Conservar el archivo defectuoso | El archivo continuó existiendo después de cerrar la aplicación. |
+
+Antes de estas pruebas, guardamos una copia de seguridad del archivo JSON original. Al finalizar, restauramos su nombre y retiramos los archivos temporales del proyecto.
+
 ## Cómo ejecutar el programa
 
 Desde la carpeta del proyecto, ejecutar en la terminal:
