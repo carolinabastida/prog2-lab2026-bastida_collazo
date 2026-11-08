@@ -184,4 +184,44 @@ Carolina comprobó las validaciones de identificador igual a cero y nombre del p
 
 Ambas participamos en el desarrollo del proyecto y en la revisión de su funcionamiento.
 
+## Video de presentación y demostración del proyecto
+
+Como parte de la entrega final de Programación II, realizamos un video para presentar nuestro **Sistema de Solicitudes de Soporte Técnico**, desarrollado por Carolina Bastida Haima y María Collazo.
+
+En esta presentación mostramos el funcionamiento de la aplicación y explicamos las principales características del sistema: el registro, la modificación, la búsqueda y la eliminación de solicitudes, así como las validaciones incorporadas para evitar errores en el ingreso de datos.
+
+También presentamos los componentes gráficos utilizados, la organización del código Java mediante el modelo MVC, el funcionamiento de la fachada y el almacenamiento de los registros en archivos JSON.
+
+### Video final de demostración
+
+En este video participamos ambas integrantes, utilizando nuestras propias grabaciones y explicaciones.
+
+**Duración:** 4 minutos y 35 segundos.
+
+[**Ver video final del Sistema de Solicitudes de Soporte Técnico**](https://drive.google.com/file/d/1jJUM83Il3BGLqYPu9iSeJYzlYa4Nr_lY/view?usp=sharing)
+
+### Elaboración del video
+
+Las filmaciones fueron realizadas por nosotras mientras trabajábamos con el programa y comprobábamos su funcionamiento. También grabamos las explicaciones con nuestras propias voces, siguiendo un guion que organizamos para presentar el proyecto de manera clara y sencilla.
+
+Para unir los diferentes fragmentos, organizar las escenas, mejorar la presentación e incorporar algunas capturas del código, utilizamos ChatGPT como herramienta de apoyo para la edición audiovisual.
+
+El contenido, las demostraciones y las explicaciones corresponden a nuestro trabajo. La herramienta nos permitió reunir el material en una presentación más ordenada, conservando nuestras voces y el carácter original de las grabaciones.
+
+### Material complementario: grabaciones caseras originales
+
+Además del video final, decidimos compartir como material extra las grabaciones caseras que realizamos durante las pruebas del programa.
+
+Estas filmaciones muestran de manera más espontánea cómo trabajamos con la aplicación, completamos formularios, realizamos distintas operaciones y comprobamos algunas de las validaciones implementadas.
+
+Las seis grabaciones originales fueron reunidas en un único archivo, conservando su sonido y contenido, sin incorporar narraciones adicionales.
+
+Las incluimos para que también se pueda observar parte del proceso de trabajo y las comprobaciones que fuimos realizando.
+
+**Duración:** 7 minutos y 26 segundos.
+
+[**Enlace al material complementario**](https://drive.google.com/file/d/1q5LBEpSXgJ-XN9yTiYUTFoUtpxEIxpeK/view?usp=sharing)
+
+**Estas grabaciones se presentan únicamente como material adicional y no sustituyen el video final de demostración.**
+
 
